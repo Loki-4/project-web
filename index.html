@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+           function msg(){
+              let name=prompt("enter ur name")
+              document.getElementById("message").innerText='hey  '+ name + '  welcome to website'
+           }
+           function validateForm(){
+            let x = document.forms["form"]["fname"].value;
+            let y = document.forms["form"]["femail"].value;
+            let z = document.forms["form"]["fnum"].value;
+            let a = document.forms["form"]["area"].value;
+            var c=0;
+            if(x==""){
+                alert("must enter name");
+                return false;
+            }
+            if(y==""){
+                alert("must enter email");
+                return false;
+            }
+            if(z==""){
+                alert("must enter number");
+                return false;
+            }
+            if(a==""){
+                alert("must fill atleast 2 lines");
+                return false;
+                c=1;
+            }
+            if(c==0){
+                alert("successfully submitted");
+                return true;
+            }
+           }
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>complete responsive flower website design tutorial</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header>
+
+         <input type="checkbox" name="" id="toggler">
+         <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">flower
+            <span>.</span>
+        </a>
+
+        <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+        </header>
+        <!-- header section  ends -->
+
+        <!-- home section starts -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>fresh flowers</h3>
+                <span>natural & beautiful flowers</span>
+                <p>lorem ipsum dolor sit amet consectetur adipiscing elit. beaten laborum ut minus
+                    corrupti dolorm dolore assumenda iste voluptate dolorem pariatur.</p>
+                <h2 id="message" class="heading">click on welcome</h2>
+                <button onclick="msg()" class="btn" value="Start">welcome</button><br>
+                <a href="#products" class="btn">shop now</a>
+            </div>
+        </section>
+        <!-- home section end -->
+
+        <!-- about section starts -->
+        <section class="about" id="about">
+            <h1 class="heading">about<span> us </span></h1>
+            <div class="row">
+                <div class="video-container">
+                    <video src="video.mp4.webm" loop autoplay muted></video>
+
+                    <h3>best flower seller</h3>
+                </div>
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>
+                    Do you have a garden? Do you know the names of all the flowers 
+                    that bloom in your garden? If not, find them out. Now, knowing 
+                    the names of flowers, not just the ones you see around you, 
+                    but all around the world, can be interesting as well as an 
+                    activity that would help you improve your vocabulary range. 
+                    You will get to learn the names of a number of flowers 
+                    in this article and also a little in detail about some 
+                    of the most common flowers you would have often come across.
+                </p>
+                <p>if you need to know more about rare flowers?
+                    click on <B><u>LEARN MORE</u></B> button</p>
+                </p>
+                <a href="https://travel.earth/top-13-most-rare-flowers-in-the-world/" class="btn">learn more</a>
+            </div>
+            </div>
+        </section>
+        <!-- about section ends-->
+
+        <!-- icons section starts -->
+        <section class="icon-container">
+            <div class="icons">
+                <img src="logo1.jpg" alt="" width="40%" height="50%">
+                <div class="info">
+                    <h3>free delivary</h3>
+                    <span>on all orders</span>
+                </div>
+            </div>
+
+            <div class="icons">
+                <img src="logo2.jpg" alt="" width="40%" height="50%">
+                <div class="info">
+                    <h3>10 days return</h3>
+                    <span>moneyback guarantee</span>
+                </div>
+            </div>
+
+            <div class="icons">
+                <img src="logo3.jpg" alt="" width="50%" height="60%">
+                <div class="info">
+                    <h3>offer & gifts</h3>
+                    <span>on all orders</span>
+                </div>
+            </div>
+
+            <div class="icons">
+                <img src="logo4.jpg" alt="" width="50%" height="60%">
+                <div class="info">
+                    <h3>secure payments</h3>
+                    <span>protected by paypal</span>
+                </div>
+            </div>
+
+        </section>
+        <!--icon section ends-->
+
+        <!--product section starts -->
+        <section class="products" id="products" >
+            <h1 class="heading">latest<span> products</span></h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="flower1.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-15%</span>
+                    <div class="image">
+                        <img src="flower2.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-5%</span>
+                    <div class="image">
+                        <img src="flower3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-20%</span>
+                    <div class="image">
+                        <img src="flower4.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-17%</span>
+                    <div class="image">
+                        <img src="flower5.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-3%</span>
+                    <div class="image">
+                        <img src="flower6.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-18%</span>
+                    <div class="image">
+                        <img src="flower7.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="flower8.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-5%</span>
+                    <div class="image">
+                        <img src="flower9.jpg" alt="" >
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>flower pot</h3>
+                        <div class="price">$12.99<span>$15.99</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--product section ends -->
+
+        <!-- review section starts -->
+
+         <section class="review" id="review">
+            <h1 class="heading" > Customer's <span>review</span></h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        A excepturi deserunt repellendus placeat at vel alias facere 
+                        perferendis magnam exercitationem. Expedita sint assumenda eveniet 
+                        magnam, quaerat exercitationem 
+                        nesciunt hic tenetur. </p>
+                    <div class="user">
+                        <img src="user1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odit corrupti error repellat velit hic autem eligendi veniam 
+                        enim minima consequatur tenetur nihil eaque beatae incidunt quibusdam,
+                         omnis laboriosam maiores alias!</p>
+                    <div class="user">
+                        <img src="user2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>julliet</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odit corrupti error repellat velit hic autem eligendi veniam 
+                        enim minima consequatur tenetur nihil eaque beatae incidunt quibusdam,
+                         omnis laboriosam maiores alias!</p>
+                    <div class="user">
+                        <img src="user3.jpg" alt="">
+                        <div class="user-info">
+                            <h3>radhika</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odit corrupti error repellat velit hic autem eligendi veniam 
+                        enim minima consequatur tenetur nihil eaque beatae incidunt quibusdam,
+                         omnis laboriosam maiores alias!</p>
+                    <div class="user">
+                        <img src="user4.jpg" alt="">
+                        <div class="user-info">
+                            <h3>chinna</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odit corrupti error repellat velit hic autem eligendi veniam 
+                        enim minima consequatur tenetur nihil eaque beatae incidunt quibusdam,
+                         omnis laboriosam maiores alias!</p>
+                    <div class="user">
+                        <img src="user5.jpg" alt="">
+                        <div class="user-info">
+                            <h3>punith</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odit corrupti error repellat velit hic autem eligendi veniam 
+                        enim minima consequatur tenetur nihil eaque beatae incidunt quibusdam,
+                         omnis laboriosam maiores alias!</p>
+                    <div class="user">
+                        <img src="user6.jpg" alt="">
+                        <div class="user-info">
+                            <h3>lilly</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+
+            </div>
+         </section>
+
+        <!-- review section ends -->
+
+         <!-- contact section starts -->
+             <section class="contact" id="contact">
+                <h1 class="heading"><span> contact </span> us </h1>
+                <div class="row">
+
+                    <form action="" onsubmit="return validateForm()" name="form">
+                        <input name="fname" type="text" placeholder="name" class="box">
+                        <input name="femail" type="email" placeholder="email" class="box">
+                        <input name="fnum" type="number" placeholder="number" class="box">
+                        <textarea name="area"   class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" class="btn" value="send message" >
+                    </form>
+
+                    <div class="image">
+                        <img src="image.jpg" alt="">
+                    </div>
+
+                </div>
+             </section>
+
+         <!-- contact section ends -->
+
+         <!-- footer section starts -->
+         <section class="footer">
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#products">products</a>
+                    <a href="#review">review</a>
+                    <a href="#contact">contact</a>
+                </div>
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#">My Account </a>
+                    <a href="#">My Order</a>
+                    <a href="#">My favorite</a>
+                </div>
+                <div class="box">
+                    <h3>Locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#">+123-456-7890</a>
+                    <a href="#"> abcd@gmail.com </a>
+                    <a href="#">mumbai,india - 400104</a>
+                    <img src="paylogo.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="credit">Created by <span> K.Lokeshwari</span> | all rights reserved</p></div>
+         </section>
+         <!-- footer section ends -->
+    </body>
+</html>
